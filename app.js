@@ -26,7 +26,9 @@ app.configure(function(){
 app.configure('development', function(){
   app.use(express.errorHandler());
 });
-
+app.post('/courses',function(req,res) { 
+	console.log('Request successfully recieved');
+});
 app.get('/', routes.index);
 app.get('/users', user.list);
 
