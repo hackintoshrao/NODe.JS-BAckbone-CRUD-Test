@@ -28,6 +28,7 @@ app.configure('development', function(){
 });
 app.post('/courses',function(req,res) { 
 	console.log('Request successfully recieved');
+	console.log((req.body.title));
 });
 app.get('/', routes.index);
 app.get('/users', user.list);
